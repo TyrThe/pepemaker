@@ -1,4 +1,4 @@
-const API_URL = 'http://localhost:10000';
+const API_URL = 'https://pepemaker-backend.onrender.com';
 
 export const generatePepe = async (prompt) => {
   try {
