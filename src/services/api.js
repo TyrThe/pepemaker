@@ -11,13 +11,19 @@ export const generatePepe = async (prompt) => {
     });
 
     if (!response.ok) {
-      throw new Error('Error en la respuesta del servidor');
+      const errorData = await response.json();
+      throw new Error(errorData.details || errorData.error || 'Error en el servidor');
     }
 
     const data = await response.json();
+    
+    if (!data.imageUrl) {
+      throw new Error('No se recibió URL de imagen');
+    }
+
     return data.imageUrl;
   } catch (error) {
-    console.error('Error generando la imagen:', error);
+    console.error('Error en la API:', error);
     throw error;
   }
 };

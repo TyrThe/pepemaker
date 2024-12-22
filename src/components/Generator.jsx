@@ -20,9 +20,11 @@ function Generator() {
     setError(null);
     setGeneratedImage('');
     
+      
+    
     try {
-      const imageUrl = await generatePepe(prompt);
-      console.log('URL recibida:', imageUrl);
+      const imageUrl = await generatePepe(prompt)
+      console.log('URL recibida:', imageUrl)
       
       if (typeof imageUrl === 'string' && imageUrl.startsWith('http')) {
         setGeneratedImage(imageUrl)
@@ -35,7 +37,7 @@ function Generator() {
     } finally {
       setIsLoading(false)
     }
-  };
+  }
 
   const scrollToGenerator = () => {
     document.getElementById('generator-section').scrollIntoView({ behavior: 'smooth' });
