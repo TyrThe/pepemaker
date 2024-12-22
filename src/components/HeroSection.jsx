@@ -2,7 +2,7 @@ import React, { useRef, useState, Suspense } from 'react';
 import { Canvas } from '@react-three/fiber';
 import { OrbitControls, PerspectiveCamera, Environment } from '@react-three/drei';
 import PepeModel from './PepeModel';
-import './styles/HeroSection.css';
+import '../styles/HeroSection.css';
 import { motion } from 'framer-motion';
 
 const Scene = ({ mousePosition }) => {

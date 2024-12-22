@@ -1,5 +1,5 @@
 import { useState } from 'react'
-import './styles/Generator.css'
+import '../styles/Generator.css'
 import { generatePepe } from '../services/api'
 import { motion } from 'framer-motion'
 import HeroSection from './HeroSection'

@@ -1,7 +1,7 @@
 import React from 'react';
 import { motion } from 'framer-motion';
 import { Camera, Zap, Share2 } from 'lucide-react';
-import './styles/features.css';
+import '../styles/features.css';
 
 const Features = () => {
   const container = {

@@ -1,4 +1,4 @@
-const API_URL = 'http://localhost:10000';
+const API_URL = 'http://localhost:3000';
 
 export const generatePepe = async (prompt) => {
   try {
