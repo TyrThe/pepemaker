@@ -103,7 +103,7 @@ function Generator() {
         {isLoading && (
           <div className="loading">
             <div className="loading-spinner" />
-            <p>Generando tu Pepe... ¡Espera un momento! 🐸</p>
+            <p>Generating your Pepe... Wait a minute! 🐸</p>
           </div>
         )}
 
